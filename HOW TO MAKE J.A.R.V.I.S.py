@@ -4,7 +4,7 @@
 # pip install webbrowser
 # pip install pyaudio
 # IF YOU HAVE ANY PROBLEM TO INSTALL PYAUDIO PLEASE SEND A EMAIL TO THE GMAIL BELOW
-# scarleyegaming@gmail.com
+# mail -  scarleyegaming@gmail.com
 # CAMMANDS ARE IN COLUMN NUMBER 42 TO 52
 import pyttsx3
 import speech_recognition as sr
