@@ -5,6 +5,7 @@
 # pip install pyaudio
 # IF YOU HAVE ANY PROBLEM TO INSTALL PYAUDIO PLEASE SEND A EMAIL TO THE GMAIL BELOW
 # scarleyegaming@gmail.com
+# CAMMANDS ARE IN COLUMN NUMBER 42 TO 52
 import pyttsx3
 import speech_recognition as sr
 import webbrowser
@@ -38,27 +39,37 @@ def tackcommand():
         return qury.lower()
 
 def taskexe():
-
+# 1 - jarvis this cammand give introduction of J.A.R.V.I.S
+# 2 - how are you this cammand is give you a good answer
+# 3 - youtube search this cammand searches in youtube just like you learning python in youtube and searche in youtube how to make J.A.R.V.I.S it also work like that 
+# 4 - web this cammand open all website like amazon and also youtube
+# 5 - google this cammand open google products like classroom but it can't open youtube
+# 6 - bye this cammand stop running J.A.R.V.I.S program
+# 7 - search this cammand searches on google just like you serche how to make jarvis in python it also work like that
+# 8 - addition this cammand plus your numbers like 5 + 5 = 10 it work like addition calculator
+# 9 - subtract this cammand subtract your number like 5 - 5 = 0  it also work like calculator
+# 10 - multiply this cammmand multiply your number like 5 x 5 = 25 it also work like calculator
+# 11 - divide this cammand divide your number like 5 ➗ 5 = 1 but it only give answer not remender
     while True:
         qury = tackcommand()
 
         if "jarvis" in qury:
             speak("hello sir , i am jarvis")
-            speak("ji sir")
+            speak("yes sir")
         elif "how are you" in qury:
-            speak("me thik ho sir")
-            speak("aapp kenseee he")
+            speak("i am ok sir")
+            speak("i hope your also ok")
 
         elif "youtube search" in qury:
             qury =  qury.replace("jarvis", "")
             qury = qury.replace("youtube search", "")
-            speak("sir topic kya ha")
+            speak("sir whats the topic")
             name3 = tackcommand()
             web  = "https://www.youtube.com/results?search_query=" + name3
             webbrowser.open(web)
             speak("done sir")
         elif "web" in qury:
-            speak("sir website ka name")
+            speak("sir website name")
             name = tackcommand()
             qury = qury.replace("jarvis", "")
             qury = qury.replace("open", "")
@@ -115,9 +126,5 @@ def taskexe():
             name11 = int(tackcommand())
             cal4 = speak(name10 / name11)
             speak("sir the calculation completed")
-        elif "my name" in qury:
-            speak("what is your name")
-            name12  = tackcommand()
-            speak("good morning " + name12)
 
 taskexe()
