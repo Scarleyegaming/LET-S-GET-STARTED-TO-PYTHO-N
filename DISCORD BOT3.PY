@@ -1,5 +1,5 @@
 
-import asyncio
+
 
 import discord
 from discord.ext import commands
@@ -55,7 +55,7 @@ async def on_message(message):
 async def on_disconnect():
 
     general_chennel = bot.get_channel(932500994066112612)
-    await asyncio.sleep(delay=1)
+
     general_chennel.send("bye")
 @bot.command(name="kick")
 @commands.has_permissions(kick_members=True)
@@ -84,4 +84,4 @@ async def message(ctx, user: discord.Member, *, message=None):
     await ctx.send("THANKS FOR JOINING SERVER CHECK THIS VIDEO TO LEARN ABOUT OUR SERVER", file=discord.File("images.jpg/dev.mp4"))
 
 
-bot.run("OTMyNDkyMzA1MzQ3MjUyMjI0.YeTxIg.aXHW0xxA8mmReK988xrGpjTAEek")
+bot.run("OTMyNDkyMzA1MzQ3MjUyMjI0.YeTxIg.L1MFNc6NLip1jAq7A-6KNxLPGEg")
